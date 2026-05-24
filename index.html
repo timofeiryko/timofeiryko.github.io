@@ -1,459 +1,84 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Тимофей Рыко</title>
-  <link rel="stylesheet" href="bulma/css/bulma.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Timofei Ryko</title>
+  <meta name="description" content="Timofei Ryko — new site coming soon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    .centered {
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: #0a0a0a;
+      color: #ffffff;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    main {
       text-align: center;
+      max-width: 480px;
     }
-    .subtitle {
-      margin-bottom: 1rem;
-      margin-top: 1rem;
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin: 0 0 16px;
     }
-    .title {
-      margin-bottom: 1rem;
-      margin-top: 1rem;
+    p.tagline {
+      font-size: clamp(15px, 2.2vw, 17px);
+      color: #888;
+      margin: 0 0 40px;
+      letter-spacing: 0.01em;
     }
-    .button {
-      white-space: normal; /* Enables text wrapping */
+    nav.links {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
     }
-    /* Transparent navbar */
-    .navbar.is-transparent {
-      background-color: rgba(50, 115, 220, 0.8); /* Adjust opacity as needed */
-      transition: background-color 0.3s ease; /* Smooth transition effect */
+    nav.links a {
+      color: #888;
+      transition: color 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    nav.links a:hover, nav.links a:focus-visible {
+      color: #ffffff;
+      outline: none;
+    }
+    nav.links svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
     }
   </style>
 </head>
-
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar is-link is-fixed-top" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-  
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-end">
-          <a href="#about" class="navbar-item">
-            <span class="icon">
-              <i class="fas fa-info is-size-5"></i>
-            </span>
-            <span class="is-size-4">Обо мне</span>
-          </a>
-          <a href="#consulting" class="navbar-item">
-            <span class="icon">
-              <i class="fas fa-handshake is-size-5"></i>
-            </span>
-            <span class="is-size-4">&nbspКонсалтинг</span>
-          </a>
-          <a href="#reviews" class="navbar-item">
-            <span class="icon">
-              <i class="fas fa-star is-size-5"></i>
-            </span>
-            <span class="is-size-4">&nbspОтзывы</span>
-          </a>
-          <a href="#contact" class="navbar-item">
-            <span class="icon">
-              <i class="fas fa-envelope is-size-5"></i>
-            </span>
-            <span class="is-size-4">&nbspСвязь</span>
-          </a>
-        </div>
-      </div>
+  <main>
+    <h1>Timofei Ryko</h1>
+    <p class="tagline">New site coming soon.</p>
+    <nav class="links" aria-label="Contacts">
+      <a href="https://linkedin.com/in/timofeiryko" aria-label="LinkedIn" rel="noopener" target="_blank">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+      </a>
+      <a href="https://t.me/ryko_official" aria-label="Telegram" rel="noopener" target="_blank">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.94 0C5.35 0 0 5.35 0 11.94c0 6.59 5.35 11.94 11.94 11.94 6.59 0 11.94-5.35 11.94-11.94C23.88 5.35 18.53 0 11.94 0zm5.81 8.13l-1.94 9.16c-.15.65-.53.81-1.07.5l-2.96-2.18-1.43 1.37c-.16.16-.29.29-.59.29l.21-2.99 5.45-4.92c.24-.21-.05-.33-.37-.12l-6.73 4.24-2.9-.91c-.63-.2-.64-.63.13-.93l11.34-4.37c.52-.19.98.13.81.86z"/></svg>
+      </a>
+      <a href="https://github.com/timofeiryko" aria-label="GitHub" rel="noopener" target="_blank">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.79 23.38c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.6-2.81 5.61-5.48 5.91.42.36.82 1.1.82 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .3"/></svg>
+      </a>
+      <a href="mailto:timofei.ryko@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-10 6.25L2 8V6l10 6.25L22 6v2z"/></svg>
+      </a>
     </nav>
-  
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Get the burger and menu elements
-        const burger = document.querySelector('.navbar-burger');
-        const menu = document.querySelector('#navbarBasicExample');
-  
-        // Add click event listener to the burger icon
-        burger.addEventListener('click', function () {
-          // Toggle 'is-active' class on both burger and menu
-          burger.classList.toggle('is-active');
-          menu.classList.toggle('is-active');
-        });
-      });
-
-      // Close menu when clicking on a menu item
-      const $navbarItems = Array.prototype.slice.call(document.querySelectorAll('.navbar-item'), 0);
-
-      $navbarItems.forEach(function ($el) {
-        $el.addEventListener('click', function () {
-          const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-          $navbarBurgers.forEach(function ($el) {
-            const target = $el.dataset.target;
-            const $target = document.getElementById(target);
-
-            $el.classList.remove('is-active');
-            $target.classList.remove('is-active');
-          });
-        });
-      });
-
-          document.addEventListener('DOMContentLoaded', function () {
-        const navbar = document.querySelector('.navbar');
-
-        window.addEventListener('scroll', function () {
-          if (window.scrollY > window.innerHeight) {
-            navbar.classList.add('is-transparent');
-          } else {
-            navbar.classList.remove('is-transparent');
-          }
-        });
-      });
-
-    </script>
-
-  <!-- Header -->
-  <section class="hero is-link is-fullheight">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <h4 class="subtitle is-5">Приветствую, я —</h4>
-        <h1 class="title is-1">Тимофей Рыко</h1>
-        <h2 class="subtitle is-3">Я здесь, чтобы помочь вам</h2>
-        <a href="https://calendar.app.google/39cyB1g8WQMD3qmy7" class="button is-link is-large" style="background-color: transparent; border: 2px solid white;"">
-          <span class="icon">
-        <i class="fas fa-calendar"></i>
-          </span>
-          <span>Записаться</span>
-        </a>
-        <p style=" margin-top: 2rem;">
-          <a href="#about" class="button is-link is-large">
-            <span class="icon">
-              <i class="fas fa-chevron-down"></i>
-            </span>
-          </a>
-        </p>
-      </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="section" id="about">
-    <!-- Title -->
-    <div class="section-heading centered">
-      <h3 class="title is-2">
-        <i class="fas fa-info"></i>
-        Обо мне
-      </h3>
-      <h4 class="subtitle is-3">Моя сильнейшая сторона — подача себя и других</h4>
-    </div>
-    
-    <!-- Container with text -->
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-two-thirds">
-          <div class="content is-size-5">
-            <p>
-              Мне 20 лет, я учусь в МФТИ и параллельно хорошо зарабатываю.
-              Дело в том, что я умею находить свои сильные стороны, развивать их
-              и применять в проектах. Вот некоторые из них (завершённые и текущие):
-            </p>
-            <ul>
-              <li>"LinkedIn" для биотехнологов (Product Owner, HAWEX LTD)</li>
-              <li>Приложение, определяющее пульс и оксигенацию крови по видео
-                (Machine Learning Engineer, University of Tartu iCV lab)</li>
-              <li>Niki Wellness (CTO)</li>
-            </ul>
-            <p>
-              А ещё я люблю преподавание и обожаю, когда люди получают от меня полезные инсайты 😉
-            </p>
-            <p>
-              Поэтому я помогаю людям <strong> найти сильные стороны в себе или своём бизнесе и применить их.</strong> Также могу проконсультировать вас по темам в рамках своей экспертизы 😎
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- Resume -->
-  <section class="section" id="resume">
-    <div class="container">
-      <div class="section-heading centered">
-        <h4 class="subtitle is-3">Одно из моих резюме в области Data Science
-          (одностраничная версия)</h4>
-        <a href="https://drive.google.com/file/d/1hOlSbpA6UIRroYOgGP-P0IYY0JdSMJE1/view?usp=sharing"
-          class="button is-link is-large">
-          <span class="icon">
-            <i class="fas fa-file-alt"></i>
-          </span>
-          <span>Скачать</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Consulting -->
-  <section class="section" id="consulting">
-    <div class="container is-size-5">
-      <div class="section-heading centered">
-        <h3 class="title is-2">
-          <i class="fas fa-handshake"></i>
-          Консалтинг
-        </h3>
-        <p>
-          <a href="https://calendar.app.google/39cyB1g8WQMD3qmy7" class="button is-link is-large">
-            <span class="icon">
-              <i class="fas fa-calendar"></i>
-            </span>
-            <span>Записаться (первый раз — бесплатно)</span>
-          </a>
-        </p>
-        <h4 class="subtitle is-3">В каких областях я могу помочь?</h4>
-      </div>
-
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-two-thirds">
-            <div class="content is-size-4">
-              <p>
-                💡 Моё основное направление — <strong>помощь молодым специалистам в области IT и Data Science с составлением резюме и подготовкой к собеседованиям</strong>.
-                У меня есть опыт собеседования программистов и ML-инженеров для своего агентства, я хорошо представляю процесс найма с обеих сторон.
-              </p>
-              <p>
-                🌍 Кроме российского рынка, я понимаю европейский, так как учился в Эстонии и работал там ML-инженером.
-              </p>
-              <p>
-                Также я могу проконсультировать вас по следующим темам:
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="columns is-centered">
-        <div class="column is-5">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-4">📈 Карьера и мотивация</h4>
-              Как составить резюме? Подготовиться к собеседованию? Выбрать
-              правильное направление развития? Что вам <strong>действительно
-              подходит?</strong> В конце концов, как не сдаваться на этом
-              трудном пути? Давайте обсудим.
-            </div>
-          </div>
-        </div>
-        <div class="column is-5">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-4">📊 Data Science & AI</h4>
-              У меня есть опыт разработки ИИ-решений и внедрения их в
-              бизнес-процессы.
-              <strong>Как отделить красивые слова от реальной пользы?</strong>
-              Как правильно собрать и подготовить данные? Я помогу вам
-              разобраться.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="columns is-centered">
-        <div class="column is-5">
-          <div class="box">
-            <div class="content">
-              <h4 class="title is-4">🧑‍💻 IT-продукты</h4>
-              Я успел поучаствовать в разработке многих IT-решений в разных
-              ролях и понимаю, как это работает. Как создать инновационный
-              продукт? <strong>Какие технологии выбрать?</strong> Как выстроить процессы?
-              Разберёмся вместе.
-            </div>
-          </div>
-        </div>
-        <div class="column is-5">
-          <div class="box">
-            <div class="content is-size">
-              <h4 class="title is-4">🐍 Обучение Python</h4>
-              Язык программирования Python — мой основной инструмент.
-              У меня <strong>большой опыт преподавания</strong>, также я
-              проводил курс по Python для обработки данных в составе
-              мини-группы.
-              Научу вас писать красивый и эффективный код.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Reviews -->
-  <section class="section" id="reviews">
-    <div class="container">
-      <div class="section-heading centered">
-        <h3 class="title is-2">
-          <i class="fas fa-star"></i>
-          Отзывы
-        </h3>
-      </div>
-
-      <div class="columns is-centered is-size-5">
-        <div class="column is-4">
-          <div class="card">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-128x128">
-                    <img src="client1.jpg" alt="Ульяна" class="is-rounded">
-                  </figure>
-                </div>
-              </div>
-              <div class="content">
-                <p>
-                  Хочу поблагодарить Тимофея за консультацию.
-                  Я подавалась на вакансию Data Engineer в Merck. 
-                  Тимофей учёл все возможные этапы интервью, помог составить план подготовки к собеседованию.
-                  И что особо важно, мы уделили внимание как интервью с рекрутером, так и возможным техническим вопросам.
-                </p>
-                <p>
-                  Видно, что Тимофей разбирается в Python и аналитике данных, мы прошлись по всем важным техническим темам и выделили пробелы в знаниях.
-                  Ответы на все мои вопросы были полные и понятные.
-                  Также Тимофей предоставил материалы для самостоятельной подготовки.
-                </p>
-                <p>
-                  Особо хочу выделить вопросы, которые мне задавал Тимофей, не типичные, на логику.
-                  Этот опыт мне очень помог пройти собеседование.
-                </p>
-                <p>
-                  <strong>— Ульяна Князюк</strong>
-                </p>
-                <a href="https://www.linkedin.com/in/ulifeee" class="button is-link is-medium">
-                  <span class="icon">
-                    <i class="fas fa-comment"></i>
-                  </span>
-                  <span>Расспросить Ульяну о Тимофее</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="column is-4">
-          <div class="card">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure class="image is-128x128">
-                    <img src="client2.jpg" alt="Максим" class="is-rounded">
-                  </figure>
-                </div>
-              </div>
-              <div class="content">
-                <p>
-                  Я хорошо знаю Тимофея, он очень профессиональный и
-                  ответственный человек.
-                  Я обратился к нему за помощью с составлением резюме. Уже на
-                  следующий день мы созвонились, выделили мои сильные стороны
-                  (о которых я раньше даже не думал) и сделали красивое CV.
-                  Также Тимофей дал мне "домашнее задание" — подготвить
-                  портфолио на GitHub. На второй консультации мы оформили
-                  портфоило и добавили его в CV.
-                </p>
-                <p>
-                  Сейчас, благодаря консультациям, я работаю в топовой
-                  биоинформатической лаборатории и кайфую от своей работы.
-                </p>
-                <p>
-                  <strong>— Максим Щепетов</strong>
-                </p>
-                <a href="https://t.me/AristotelPetrov" class="button is-link is-medium">
-                  <span class="icon">
-                    <i class="fas fa-comment"></i>
-                  </span>
-                  <span>Расспросить Максима о Тимофее</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-heading centered">
-        <p>
-          <a href="https://calendar.app.google/39cyB1g8WQMD3qmy7" class="button is-link is-large" style="margin-top: 1rem">
-            <span class="icon">
-              <i class="fas fa-calendar"></i>
-            </span>
-            <span>Записаться (первый раз — бесплатно)</span>
-          </a>
-        </p>
-        <h4 class="subtitle is-3">У вас есть предложение по коллаборации или
-          просто хотите написать?</h4>
-      </div>
-
-      <form method="POST" action="https://formspree.io/f/mknynyvz">
-        <input type="hidden" name="_subject" value="Request from consultations website">
-
-        <div class="columns is-centered">
-          <div class="column is-6">
-            <div class="box">
-              <div class="field">
-                <label class="label">Имя</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Как к вам обращаться?" name="name">
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Почта</label>
-                <div class="control has-icons-left">
-                  <input class="input" type="email" placeholder="your.email@example.com" name="_replyto">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Сообщение</label>
-                <div class="control">
-                  <textarea class="textarea" placeholder="Какой у вас запрос?" name="message"></textarea>
-                </div>
-              </div>
-
-              <div class="field is-grouped centered">
-                <div class="control">
-                  <button class="button is-link" type="submit">
-                    <span class="icon">
-                      <i class="fas fa-envelope"></i>
-                    </span>
-                    <span>Написать</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Тимофей Рыко</strong> &copy; 2024
-      </p>
-    </div>
-  </footer>
-
+  </main>
 </body>
-
 </html>
