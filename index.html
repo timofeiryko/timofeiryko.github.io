@@ -1,100 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Timofei Ryko</title>
-  <meta name="description" content="Timofei Ryko — new site coming soon.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Timofei Ryko
+  </title>
+  <meta content="Timofei Ryko — new site coming soon." name="description"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
   <style>
+   :root { color-scheme: dark; }
     *, *::before, *::after { box-sizing: border-box; }
-    html, body { min-height: 100%; margin: 0; }
-    body {
-      background: #0a0a0a;
-      color: #ffffff;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      font-weight: 300;
-      -webkit-font-smoothing: antialiased;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-      min-height: 100vh;
-    }
-    main {
-      text-align: center;
-      max-width: 480px;
-    }
-    h1 {
-      font-size: clamp(28px, 5vw, 40px);
-      font-weight: 500;
-      letter-spacing: -0.02em;
-      margin: 0 0 16px;
-    }
-    p.tagline {
-      font-size: clamp(15px, 2.2vw, 17px);
-      color: #888;
-      margin: 0 0 40px;
-      letter-spacing: 0.01em;
-    }
-    nav.links {
-      display: flex;
-      justify-content: center;
-      gap: 28px;
-    }
-    nav.links a {
-      color: #888;
-      transition: color 0.2s ease;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-    nav.links a:hover, nav.links a:focus-visible {
-      color: #ffffff;
-      outline: none;
-    }
-    nav.links svg {
-      width: 22px;
-      height: 22px;
-      fill: currentColor;
-    }
-    .email { margin: 24px 0 0; font-size: 15px; }
-    .email a { color: #aaa; text-decoration: none; transition: color .2s; }
-    .email a:hover { color: #fff; }
-    .resource-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; margin: 28px 0; }
-    .resource-links a { color: #bbb; font-size: 15px; text-decoration: none; border-bottom: 1px solid #333; padding-bottom: 4px; transition: color .2s, border-color .2s; }
-    .resource-links a:hover { color: #fff; border-color: #888; }
+    body { margin: 0; min-height: 100svh; display: grid; place-items: center; padding: 64px 28px; background: #0a0a0a; color: #e8e8e8; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 400; -webkit-font-smoothing: antialiased; }
+    main { width: 100%; max-width: 580px; }
+    header { margin-bottom: 48px; }
+    h1 { margin: 0 0 12px; font-size: clamp(32px, 6vw, 44px); font-weight: 500; line-height: 1.15; letter-spacing: -.035em; }
+    .tagline { margin: 0; color: #939393; font-size: 15px; line-height: 1.6; }
+    section { display: grid; grid-template-columns: 144px minmax(0, 1fr); gap: 20px; padding: 26px 0; border-top: 1px solid #242424; }
+    h2 { margin: 0; padding-top: 13px; color: #969696; font-size: 12px; line-height: 1.5; font-weight: 500; letter-spacing: .035em; }
+    nav { display: flex; flex-direction: column; align-items: stretch; }
+    a { color: #dedede; text-decoration: none; transition: color .18s, background .18s; }
+    .item { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 44px; padding: 10px 12px; margin-inline: -12px; border-radius: 8px; font-size: 16px; line-height: 1.5; }
+    .arrow { color: #717171; font-size: 15px; }
+    a:hover { color: #fff; background: #141414; }
+    a:focus-visible { outline: 2px solid #b4b4b4; outline-offset: 4px; }
+    .contacts { display: flex; flex-direction: row; flex-wrap: wrap; gap: 0 22px; }
+    .contacts a { display: inline-flex; align-items: center; min-height: 44px; border-radius: 8px; font-size: 14px; }
+    .email { margin: 10px 0 0; font-size: 14px; line-height: 1.6; }
+    .email a { display: inline-flex; align-items: center; min-height: 44px; color: #b4b4b4; border-radius: 8px; overflow-wrap: anywhere; }
+    @media (max-width: 480px) { body { padding: 44px 24px; } header { margin-bottom: 36px; } section { grid-template-columns: 1fr; gap: 12px; padding: 22px 0; } h2 { padding-top: 0; } .item { font-size: 15px; } }
+    @media (prefers-reduced-motion: reduce) { a { transition: none; } }
+  
+    .channel-description { display: block; margin-top: 3px; color: #939393; font-size: 12px; font-weight: 400; line-height: 1.5; }
   </style>
-</head>
-<body>
+ </head>
+ <body>
   <main>
-    <h1>Timofei Ryko</h1>
-    <p class="tagline">New site coming soon.</p>
-    <nav class="resource-links" aria-label="Projects">
-      <a href="https://olquest.ru/" target="_blank" rel="noopener">Olquest ↗</a>
-      <a href="https://limpopoai.ru/" target="_blank" rel="noopener">Limpopo AI ↗</a>
-      <a href="https://drive.google.com/file/d/1fKTkPZsailnprsSlVkW9j74xVOMgIzQh/view?usp=sharing" target="_blank" rel="noopener">CV ↗</a>
+   <header>
+    <h1>
+     Timofei Ryko
+    </h1>
+    <p class="tagline">
+     New site coming soon.
+    </p>
+   </header>
+   <section aria-labelledby="projects">
+    <h2 id="projects">
+     Projects
+    </h2>
+    <nav aria-label="Projects">
+     <a class="item" href="https://olquest.ru/" rel="noopener" target="_blank">
+      <span>
+       Olquest
+      </span>
+      <span aria-hidden="true" class="arrow">
+       ↗
+      </span>
+     </a>
+     <a class="item" href="https://limpopoai.ru/" rel="noopener" target="_blank">
+      <span>
+       Limpopo AI
+      </span>
+      <span aria-hidden="true" class="arrow">
+       ↗
+      </span>
+     </a>
     </nav>
-    <nav class="resource-links" aria-label="Telegram channels">
-      <a href="https://t.me/timryko" target="_blank" rel="noopener">Tim Ryko ↗</a>
-      <a href="https://t.me/bio_olympiads" target="_blank" rel="noopener">Олимпиады по биологии ↗</a>
-      <a href="https://t.me/biology_logic" target="_blank" rel="noopener">БиоЛогика ↗</a>
+   </section>
+   <section aria-labelledby="channels">
+    <h2 id="channels">
+     Telegram channels
+    </h2>
+    <nav aria-label="Telegram channels">
+     <a class="item" href="https://t.me/timryko" rel="noopener" target="_blank">
+      <span>
+       Tim Ryko
+       <span class="channel-description">
+        Личное и проекты
+       </span>
+      </span>
+      <span aria-hidden="true" class="arrow">
+       ↗
+      </span>
+     </a>
+     <a class="item" href="https://t.me/bio_olympiads" rel="noopener" target="_blank">
+      <span>
+       Олимпиады по биологии
+       <span class="channel-description">
+        Подготовка к олимпиадам
+       </span>
+      </span>
+      <span aria-hidden="true" class="arrow">
+       ↗
+      </span>
+     </a>
+     <a class="item" href="https://t.me/biology_logic" rel="noopener" target="_blank">
+      <span>
+       БиоЛогика
+       <span class="channel-description">
+        Биология простыми словами
+       </span>
+      </span>
+      <span aria-hidden="true" class="arrow">
+       ↗
+      </span>
+     </a>
     </nav>
-    <nav class="links" aria-label="Contacts">
-      <a href="https://linkedin.com/in/timofeiryko" aria-label="LinkedIn" rel="noopener" target="_blank">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
-      </a>
-      <a href="https://t.me/ryko_official" aria-label="Telegram" rel="noopener" target="_blank">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.94 0C5.35 0 0 5.35 0 11.94c0 6.59 5.35 11.94 11.94 11.94 6.59 0 11.94-5.35 11.94-11.94C23.88 5.35 18.53 0 11.94 0zm5.81 8.13l-1.94 9.16c-.15.65-.53.81-1.07.5l-2.96-2.18-1.43 1.37c-.16.16-.29.29-.59.29l.21-2.99 5.45-4.92c.24-.21-.05-.33-.37-.12l-6.73 4.24-2.9-.91c-.63-.2-.64-.63.13-.93l11.34-4.37c.52-.19.98.13.81.86z"/></svg>
-      </a>
-      <a href="https://github.com/timofeiryko" aria-label="GitHub" rel="noopener" target="_blank">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.79 23.38c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.6-2.81 5.61-5.48 5.91.42.36.82 1.1.82 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .3"/></svg>
-      </a>
-
+   </section>
+   <section aria-labelledby="cv">
+    <h2 id="cv">
+     CV
+    </h2>
+    <nav aria-label="CV">
+     <a class="item" href="https://drive.google.com/file/d/1fKTkPZsailnprsSlVkW9j74xVOMgIzQh/view?usp=sharing" rel="noopener" target="_blank">
+      <span>
+       View CV
+      </span>
+      <span aria-hidden="true" class="arrow">
+       ↗
+      </span>
+     </a>
     </nav>
-    <p class="email"><a href="mailto:timofei.ryko@gmail.com">timofei.ryko@gmail.com</a></p>
+   </section>
+   <section aria-labelledby="contacts">
+    <h2 id="contacts">
+     Contacts
+    </h2>
+    <div>
+     <nav aria-label="Contacts" class="contacts">
+      <a href="https://linkedin.com/in/timofeiryko" rel="noopener" target="_blank">
+       LinkedIn
+      </a>
+      <a href="https://t.me/ryko_official" rel="noopener" target="_blank">
+       Telegram
+      </a>
+      <a href="https://github.com/timofeiryko" rel="noopener" target="_blank">
+       GitHub
+      </a>
+     </nav>
+     <p class="email">
+      <a href="mailto:timofei.ryko@gmail.com">
+       timofei.ryko@gmail.com
+      </a>
+     </p>
+    </div>
+   </section>
   </main>
-</body>
+ </body>
 </html>
