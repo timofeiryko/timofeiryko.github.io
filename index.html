@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; }
-    html, body { height: 100%; margin: 0; }
+    html, body { min-height: 100%; margin: 0; }
     body {
       background: #0a0a0a;
       color: #ffffff;
@@ -21,6 +21,7 @@
       align-items: center;
       justify-content: center;
       padding: 24px;
+      min-height: 100vh;
     }
     main {
       text-align: center;
@@ -62,12 +63,19 @@
     .email { margin: 24px 0 0; font-size: 15px; }
     .email a { color: #aaa; text-decoration: none; transition: color .2s; }
     .email a:hover { color: #fff; }
+    .resource-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 24px; margin: 28px 0; }
+    .resource-links a { color: #bbb; font-size: 15px; text-decoration: none; border-bottom: 1px solid #333; padding-bottom: 4px; transition: color .2s, border-color .2s; }
+    .resource-links a:hover { color: #fff; border-color: #888; }
   </style>
 </head>
 <body>
   <main>
     <h1>Timofei Ryko</h1>
     <p class="tagline">New site coming soon.</p>
+    <nav class="resource-links" aria-label="Projects">
+      <a href="https://olquest.ru/" target="_blank" rel="noopener">Olquest ↗</a>
+      <a href="https://limpopoai.ru/" target="_blank" rel="noopener">Limpopo AI ↗</a>
+    </nav>
     <nav class="links" aria-label="Contacts">
       <a href="https://linkedin.com/in/timofeiryko" aria-label="LinkedIn" rel="noopener" target="_blank">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
